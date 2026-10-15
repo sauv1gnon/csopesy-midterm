@@ -1,0 +1,8 @@
+node_modules/
+.wrangler/
+.dev.vars
+# never publish course materials or the answer key
+sources/
+*.pdf
+exam.json
+work/
