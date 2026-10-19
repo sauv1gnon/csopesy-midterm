@@ -4,8 +4,9 @@ An unofficial self-review tool for the CSOPESY (Introduction to Operating System
 
 **Live:** https://csopesy-midterm.alt-surf.com
 
-- **Mock exam:** 100 items drawn fresh each attempt from a 245-question bank. Answers are revealed only after you submit; results track topic mastery across attempts.
+- **Mock exam:** 100 items drawn fresh each attempt from a 245-question bank, plus 3 CPU scheduling worksheets generated fresh each attempt (109 scored items). Answers are revealed only after you submit; results track topic mastery across attempts.
 - **Practice by topic:** instant feedback, weakest areas first. Practice never changes mastery.
+- **Scheduling exercises:** Canvas-style worksheets (Start, CT, TAT, WT, averages) for FCFS & SJF, Non-Preemptive Priority & SRTF, and Round Robin. Use the class problem or a fresh seeded variation; each check marks every cell and shows the Gantt chart, a worked solution and a step-by-step trace.
 - **Citations:** every answer links to the lecture page it came from, with the passage highlighted.
 
 Everything runs in one self-contained, offline-capable HTML file (`public/index.html`). Progress is stored in your browser's `localStorage`; use **Export progress** to back it up.
@@ -20,6 +21,9 @@ Everything runs in one self-contained, offline-capable HTML file (`public/index.
 | 04 Processes | 44 | 19 |
 | 05 Threads | 31 | 12 |
 | 06 CPU Scheduling | 50 | 22 |
+| 06 CPU Scheduling Exercises | generated | 3 worksheets (9 scored items) |
+
+Scheduling conventions used by the exercises: ties go to the earlier arrival, then the lower process number; Priority 1 is highest; SRTF preempts only on a strictly shorter burst; in Round Robin a new arrival joins the queue before the process preempted at the same instant. The scheduling engine is cross-checked against an independent Python reference (50,000 random cases, 0 mismatches).
 
 ## Notes
 
